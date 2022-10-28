@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCoordinator">
         <activity
+            android:name=".roomDao.RoomTestActivity"
+            android:exported="false" />
+        <activity
             android:name=".qrcode.QRCodeActivity"
             android:exported="true" />
         <activity
@@ -24,8 +27,7 @@
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".guidepage.GuideActivity">
-        </activity>
+        <activity android:name=".guidepage.GuideActivity"></activity>
         <activity android:name=".BottomMenusViewActivity" />
         <activity android:name=".coordinatorLayout.Coordinator1Acitvity" />
         <activity android:name=".coordinatorLayout.CoordinatorActivity" />
@@ -37,9 +39,10 @@
             android:name=".guide.GuideActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActivityFullscreen" />
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
