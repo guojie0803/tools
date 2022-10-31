@@ -44,11 +44,11 @@ public class RoomTestActivity extends AppCompatActivity {
     }
 
     public void delete(View view) {
+        //数据库 删除数据
         Word word1 = new Word("Hello", "你好");
         word1.setId(37);
         wordDao.deleteWords(word1);
         updataView();
-
     }
 
     public void clear(View view) {
